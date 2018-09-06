@@ -58,6 +58,20 @@
           "description": "Subnet 3 Name"
         }
       },
+    "subnet4Prefix": {
+        "type": "string",
+        "defaultValue": "10.0.3.0/24",
+        "metadata": {
+          "description": "Subnet 4 Prefix"
+        }
+      },
+      "subnet4Name": {
+        "type": "string",
+        "defaultValue": "Subnet4-DMZ",
+        "metadata": {
+          "description": "Subnet 4 Name"
+        }
+      },
     "location": {
       "type": "string",
       "defaultValue": "[resourceGroup().location]",
@@ -97,7 +111,14 @@
             "properties": {
               "addressPrefix": "[parameters('subnet3Prefix')]"
             }
+          },
+          {
+            "name": "[parameters('subnet4Name')]",
+            "properties": {
+              "addressPrefix": "[parameters('subnet4Prefix')]"
+            }
           }
+
         ]
       }
     }
