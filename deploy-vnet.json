@@ -96,7 +96,7 @@
       },
       "subnet6Name": {
         "type": "string",
-        "defaultValue": "Subnet5-DMZ",
+        "defaultValue": "Subnet6-DMZ",
         "metadata": {
           "description": "Subnet 6 Name"
         }
