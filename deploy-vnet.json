@@ -87,6 +87,20 @@
           "description": "Subnet 5 Name"
         }
       },
+    "subnet6Prefix": {
+        "type": "string",
+        "defaultValue": "10.0.5.0/24",
+        "metadata": {
+          "description": "Subnet 6 Prefix"
+        }
+      },
+      "subnet6Name": {
+        "type": "string",
+        "defaultValue": "Subnet5-DMZ",
+        "metadata": {
+          "description": "Subnet 6 Name"
+        }
+      },
 
 
     "location": {
@@ -140,6 +154,13 @@
             "name": "[parameters('subnet5Name')]",
             "properties": {
               "addressPrefix": "[parameters('subnet5Prefix')]"
+            }
+          },
+
+	  {
+            "name": "[parameters('subnet6Name')]",
+            "properties": {
+              "addressPrefix": "[parameters('subnet6Prefix')]"
             }
           }
 
