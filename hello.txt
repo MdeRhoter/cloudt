@@ -5,3 +5,4 @@ Regel 3
 Regel 4
 
 Espoo is nice
+This is a new line added in Visual Studio Code
